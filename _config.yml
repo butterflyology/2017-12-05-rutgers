@@ -1,70 +1,26 @@
-#------------------------------------------------------------
-# Values for this workshop.
-#------------------------------------------------------------
-
-# Which carpentry is this ("swc" or "dc")?
-carpentry: "swc"
-
-# Overall title for pages.
-title: "Workshop Title"
-
-# Contact email address.
-email: lessons@software-carpentry.org
-
-#------------------------------------------------------------
-# Generic settings (should not need to change).
-#------------------------------------------------------------
-
-# What kind of thing is this ("workshop" or "lesson")?
-kind: "workshop"
-
-# Magic to make URLs resolve both locally and on GitHub.
-# See https://help.github.com/articles/repository-metadata-on-github-pages/.
-repository: <USERNAME>/<PROJECT>
-
-# Sites.
-amy_site: "https://amy.software-carpentry.org/workshops"
-dc_site: "http://datacarpentry.org"
-swc_github: "https://github.com/swcarpentry"
-swc_site: "https://software-carpentry.org"
-swc_pages: "https://swcarpentry.github.io"
-template_repo: "https://github.com/swcarpentry/styles"
-example_repo: "https://github.com/swcarpentry/lesson-example"
-example_site: "https://swcarpentry.github.com/lesson-example"
-workshop_repo: "https://github.com/swcarpentry/workshop-template"
-workshop_site: "https://swcarpentry.github.io/workshop-template"
-training_site: "https://swcarpentry.github.io/instructor-training"
-swc_installer: "https://github.com/swcarpentry/windows-installer/releases/download/v0.3/SWCarpentryInstaller.exe"
-
-# Surveys.
-pre_survey: "https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id="
-post_survey: "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id="
-
-# Start time in minutes (0 to be clock-independent, 540 to show a start at 09:00 am)
-start_time: 0
-
-# Specify that things in the episodes collection should be output.
-collections:
-  episodes:
-    output: true
-    permalink: /:path/
-  extras:
-    output: true
-
-# Set the default layout for things in the episodes collection.
-defaults:
-  - values:
-      root: ..
-  - scope:
-      path: ""
-      type: episodes
-    values:
-      layout: episode
-
-# Files and directories that are not to be copied.
-exclude:
-  - Makefile
-  - bin
-
-# Turn off built-in syntax highlighting.
-highlighter: false
+#--------------------------------------------------------------------------------
+# Values for this workshop - EDIT THIS SECTION.
+#--------------------------------------------------------------------------------
+workshop_repo   : "https://github.com/smcclatchy/2017-01-26-tufts"
+workshop_site   : "http://smcclatchy.github.io/2017-01-26-tufts"
+#--------------------------------------------------------------------------------
+# Standard Data Carpentry settings - should not need to be modified.
+#--------------------------------------------------------------------------------
+dc_blog        : "http://datacarpentry.github.io/blog"
+dc_contact     : "admin@datacarpentry.org"
+dc_github      : "http://github.com/datacarpentry"
+swc_installer   : "http://files.software-carpentry.org/SWCarpentryInstaller.exe"
+#dc_lessons     : "http://software-carpentry.org/v5/novice"
+dc_site        : "http://datacarpentry.org"
+dc_twitter     : "http://twitter.com/datacarpentry"
+#swc_vm          : "https://docs.google.com/uc?id=0B4Kr6DYkzkQtSTZLQzF4aVB4NDQ&export=download"
+dc_pre_survey   : "https://www.surveymonkey.com/r/dc_pre_workshop_v1"
+dc_post_survey  : "https://www.surveymonkey.com/r/dc_post_workshop_v1"
+#--------------------------------------------------------------------------------
+# Settings for Jekyll - should not need to be modified.
+#--------------------------------------------------------------------------------
+markdown        : kramdown
+kramdown        :
+  entity_output : as_input # &mdash; is output as &mdash;
+  smart_quotes  : [39, 39, 34, 34] # decimal for left/right single/double quotes
+exclude         : [tools]
