@@ -1,8 +1,8 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "https://github.com/smcclatchy/2017-01-26-tufts"
-workshop_site   : "http://smcclatchy.github.io/2017-01-26-tufts"
+workshop_repo   : "https://github.com/butterflyology/2017-12-05-rutgers"
+workshop_site   : "https://butterflyology.github.io/2017-12-05-rutgers/"
 #--------------------------------------------------------------------------------
 # Standard Data Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
